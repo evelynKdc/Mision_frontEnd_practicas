@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <title>Cookies | Pastelerias</title>
+</head>
+<body class="body_pedidos">
+    <main class="container_general">
+        <form action="">
+            <div class="form_container">
+                <h1>Registra tu pedido</h1>
+                <div>
+                    <label for="nombre">Nombres</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div>
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" id="apellido" name="apellido">
+                </div>
+                <div>
+                    <label for="correo">Correo</label>
+                    <input type="mail" id="correo" name="correo">
+                </div>
+                <div>
+                    <label for="telefono">Telefono</label>
+                    <input type="nummber" id="telefono" name="telefono">
+                </div>
+                <div  class="sabor_group">
+                    <label for="sabor">Sabor</label>
+                    <select name="sabor" id="sabor">
+                        <option value="Seleccione un sabor" selected>Seleccione un sabor</option>
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Vainilla">Vainilla</option>
+                        <option value="Mixto">Mixto</option>
+                    </select>
+                </div>
+                <div class="acompañantes_group">
+                    <label class=".titulo_group">Acompañante</label>
+                    <div>
+                        <input type="checkbox" name="acompañante" id="fresa" value="fresa" class="checkbox_pedido"><label for="fresa">Fresas</label>
+                        <input type="checkbox" name="acompañante" id="caramelos" value="caramelos" class="checkbox_pedido"><label for="caramelos">Caramelos</label>
+                        <input type="checkbox" name="acompañante" id="osos" value="osos de goma" class="checkbox_pedido"><label for="osos">Osos de goma</label>
+                    </div>
+                </div>
+                <!-- <select name="acompañante" id="acompañante">
+                    <option value="Seleccione un acompañante" selected>Seleccione un acompañante</option>
+                    <option value="Fresas">Fresas</option>
+                    <option value="Caramelos">Caramelos</option>
+                    <option value="Ositos de goma">Ositos de goma</option>
+                </select> -->
+                <div class="txt_group">
+                    <label class="txt_label" for="detalle">Detalles</label>
+                    <textarea name="detalle" id="detalle" cols="30" rows="5" class="txt_detalle"></textarea>
+                </div>
+                <input type="submit" value="Registrar" class="btn_enviar">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
